@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <title>IEEE LNMIIT SB</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+		<!-- font-awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- symentic ui -->
+        <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="js/slider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+
+			  // Store hash
+			  var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow200.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+		jQuery(document).ready(function($){ 
+		if (localStorage.getItem('advertOnce') !== 'true') {
+		$('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
+		localStorage.setItem('advertOnce','true');
+		} 
+		$('#advert-once .advert-button').on('click',function(){
+		$('#advert-once').hide();
+		}); 
+		});
+		</script>
+    </head>
+    <body>
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html" >
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                  <div class="main-menu">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li>
+                          <a href="index.html" >Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a class="scroll-link" href="#call-to-action">Contact</a></li>
+                      </ul>
+                  </div>
+                </nav>
+                <!-- /main nav -->
+            </div>
+        </header>
+
+        <!--
+        ==================================================
+            Global Page Section Start
+        ================================================== -->
+        < <section class="global-page-headerr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Agri-bot</h2>
+                            <div class="portfolio-meta">
+                                <span> Tags: <a href="">LNMIIT</a>, <a href="">Student branch</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section><!--/#Page header-->
+            <section class="single-post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="post-img">
+                                <img class="center" alt="" src="images/blog/agribot.jpg">
+                            </div>
+                            <div class="post-content">
+                              <h3>Member</h3>
+                                <p>Arnab Sinha(Team Lead)</p>
+                 				<p>Aditya Sharma</p>
+                 				<p>Shubhi Rustagi</p>
+                 				<p>Dharmesh Poddar</p>
+                				<p>Nisha Goyal</p>
+                 				<p>Prerak Kothari</p>
+                                <hr>
+                              <h3>Mentor</h3>
+                                <p>
+                                  Pankhuri Vanjani</p>
+                                <hr>
+                                <h3>Domain</h3>
+                                <p>IP, ML, Web Development, App Devlopment.</p>
+                                <hr>
+                                <h3>Project Description</h3>
+                                <p>
+                                  This Project is about helping farmers. Traditionally farmers relied on their own knowledge to profit suitably from their farms by developing a chat-bot for agriculture we can provide great help to them. Agri-bot can assist farmers about the ideal crops which they should grow in their field, about the different disease which can affect their crop and the ways by which they can tackle these issues. 
+
+Initially, we are developing an android application which can be used for disease detection and weed detection in crops.   
+
+After completion of the previous step, we will focus on soil detection.The agri-bot will have data about different soil and the ideal crops which are suitable for it. The farmers will get assistance about fertilizers which can be used and the amount of water which is ideal for their crop. This will help farmers in decreasing the effective cost of growing their crop. This will also prove beneficial for the environment.                                 </p>
+                                <hr>
+                                <h3>Current Progress</h3>
+                                <p>
+                                  Currently We are Collecting the datasets of disease-stricken leaves 2) List down types of leaves and diseases associated with it, the characteristics of a disease on a certain leaf species which can help us spot it.
+                                </p>
+                                <hr>
+                              <h3>Github Link</h3>
+                              <ul class="social">
+                              <li>
+                                <a href="https://github.com/IEEE-LNMIIT-SB/IEEE-Project-Agribot">
+                                  <i class="ion-social-github"></i>
+                                </a>
+                              </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <!--
+              
+              ==================================================
+        Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Health Care bot</h2>
+                            <div class="portfolio-meta">
+                                <span> Tags: <a href="">LNMIIT</a>, <a href="">Student branch</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section><!--/#Page header-->
+            <section class="single-post">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="post-img">
+                                <img class="center" alt="" src="images/blog/healthcarebot.jpg">
+                            </div>
+                            <div class="post-content">
+                              <h3>Member</h3>
+						      	<p>Anubhav Natani (Team Lead)</p>
+								<p>Pawan Kumar Jain (Team Lead)</p>
+								<p>Aditya Rathi</p>
+								<p>Ujjwal Kumar</p>
+								<p>Deepika Garg</p>
+								<p>Avi Kasliwal</p>
+								<p>Parth Jain</p>
+								<p>Ujjawal Kumar</p>
+                                <hr>
+                              <h3>Mentor</h3>
+                                <p>
+                                  ........</p>
+                                <hr>
+                                <h3>Domain</h3>
+                                <p>NLP, App Development, Web Development, ML.</p>
+                                <hr>
+								<h3>Project Description</h3>
+                                <p>
+                                  For Health Care bot our main aim is to solve some of the residents' health-related issues at the home itself and also to take actions to encourage them to live a healthy lifestyle.
+We are using the power of machine learning and NLP to make our bot as real as possible and we are collecting a vast variety of data so that it can handle any type of situation.
+Whether it is an emergency or it is a fun chat. We are also focusing our bot to work for the community as by adding little-little features which can improve the lifestyle of general people greatly like whether you are drinking the proper amount of water daily and other things like diet etc.                                </p>
+								<p>We are exploring the ideas, any suggestions are appreciated.</p>
+                                <hr>
+                                <h3>Current Progress</h3>
+                                <p>
+                                  Currently we are scraping data from the web regarding disease and health information and cleaning the data for the same. 
+                                </p>
+                                <hr>
+                              <h3>Github Link</h3>
+                              <ul class="social">
+                              <li>
+                                <a href="https://github.com/IEEE-LNMIIT-SB/IEEE-Project-Healthcarebot">
+                                  <i class="ion-social-github"></i>
+                                </a>
+                              </li>
+                              </ul>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!--
+        ==================================================
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s"   data-wow-duration="500ms">HOW TO JOIN? ?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">We heartily welcome to our student branch and we wish to bring technologies for people by merging together as one. We would also love to address your queries and suggestion, click down the button to contact us.</p>
+                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--
+       ==================================================
+       Footer Section Start
+       ================================================== -->
+        <!-- <footer id="footer">
+          <div class="container">              <ul class="social">
+                <li>
+                   <a href="https://www.facebook.com/IEEE.LNMIIT/" class="Facebook">
+                        <i class="ion-social-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/LNMIIT_Jaipur" class="Twitter">
+                        <i class="ion-social-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/company/ieee-sb-lnmiit/" class="Linkedin">
+                        <i class="ion-social-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/IEEE-LNMIIT-SB">
+                        <i class="ion-social-github"></i>
+                      </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer> --> <!-- /#footer -->
+
+  </body>
+</html>

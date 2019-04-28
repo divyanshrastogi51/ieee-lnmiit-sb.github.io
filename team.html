@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <title>IEEE LNMIIT SB</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- symentic ui -->
+        <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="js/slider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="js/main.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.4.0.min.js"
+                integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+                crossorigin="anonymous">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+
+			  // Store hash
+			  var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 500, function(){
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow200.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+		jQuery(document).ready(function($){ 
+		if (localStorage.getItem('advertOnce') !== 'true') {
+		$('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
+		localStorage.setItem('advertOnce','true');
+		} 
+		$('#advert-once .advert-button').on('click',function(){
+		$('#advert-once').hide();
+		}); 
+		});
+		</script>
+    </head>
+    <body>
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html" >
+                          <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                  <div class="main-menu">
+                      <ul class="nav navbar-nav navbar-right">
+                        <li>
+                          <a href="index.html" >Home</a>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a class="scroll-link" href="#call-to-action">Contact</a></li>
+                      </ul>
+                  </div>
+                </nav>
+                <!-- /main nav -->
+            </div>
+        </header>
+
+
+        <!--
+        ==================================================
+            Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>LNMIIT Team</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--
+        ==================================================
+            Team Section Start
+        ================================================== -->
+        <section id="team">
+            <div class="container">
+                <div class="row">
+                    <h2 class="subtitle text-center">Meet The Team</h2>
+
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <div class="team-img">
+                                <img src="images/team/9.jpg" class="img-circle" alt="">
+                            </div>
+                            
+                            <h3 class="team_name">Pankhuri Vanjani</h3>
+                            <p class="team_designation">Chairperson <br>16uec069@lnmiit.ac.in</br></p>
+                            <p class="team_text">IoT, Computer Vision & Robotics.</p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/pankhuri-vanjani-767283101/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <div class="team-img">
+                                <img src="images/team/2.jpg" class="img-circle" alt="">
+                            </div>
+                            
+                            <h3 class="team_name">Rishabh Jain</h3>
+                            <p class="team_designation">Vice Chairperson <br>rjrishabh2409@gmail.com</br></p>
+                            <p class="team_text">Embedded Systems, IoT & Robotics.</p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/rishabh-jain2409/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <div class="team-img">
+                                <img src="images/team/1.jpg" class="img-circle img-responsive" alt="">
+                            </div>
+                            <h3 class="team_name">Yash Agrawal</h3>
+                            <p class="team_designation">Branch Secretary <br>yash.agr5980@gmail.com</br></p>
+                            <p class="team_text">Website Design & Management.</p>
+                            <p class="social-icons">
+                           		<a href="https://github.com/macbull" target="_blank"><i class="ion-social-github"></i></a>
+                              	<a href="https://www.linkedin.com/in/yashagrawal5980/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+				</div>
+                  
+                  <div class="row">
+                  <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <div class="team-img">
+                                <img src="images/team/3.jpg" class="img-circle" alt="">
+                            </div>
+                            
+                            <h3 class="team_name">Nischal Goyal</h3>
+                            <p class="team_designation">Treasurer <br>17ucs101@lnmiit.ac.in</br></p>
+                            <p class="team_text">Data Structures & Algorithms Analysis.</p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/nischal-goyal-620270146/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+                            <div class="team-img">
+                                <img src="images/team/4.jpg" class="img-circle" alt="">
+                            </div>
+                            <h3 class="team_name">Dhruv Gupta</h3>
+                            <p class="team_designation">Core Member <br>17uec044@lnmiit.ac.in</br></p>
+                            <p class="team_text">Web Development & Programming.</p>
+                            <p class="social-icons">
+                                <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/dhruvgupta14/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <div class="team-img">
+                                <img src="images/team/5.jpg" class="img-circle" alt="">
+                            </div>
+                            <h3 class="team_name">Pranjal Jain</h3>
+                            <p class="team_designation">Core Member <br>16uec072@lnmiit.ac.in</br></p>
+                            <p class="team_text">Internet of Things, Robotics, Machine Learning, & Computer Vision.</p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/iam-pranjal-jain/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
+                            <div class="team-img">
+                                <img src="images/team/7.jpg" class="img-circle" alt="">
+                            </div>
+                            
+                            <h3 class="team_name">Arushi Maheshwari</h3>
+                            <p class="team_designation">Core Member <br>arushimah@gmail.com</br></p>
+                            <p class="team_text">Machine Learning. </p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/arushi-maheshwari-781283152/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
+                            <div class="team-img">
+                                <img src="images/team/8.jpg" class="img-circle" alt="">
+                            </div>
+                            <h3 class="team_name">Srivardhan</h3>
+                            <p class="team_designation">Core Member <br>17uec058@lnmiit.ac.in</br></p>
+                            <p class="team_text">Management. </p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/jaladi-srivardhan-b138b5183/" target="_blank"><i class="ion-social-linkedin"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <div class="team-img">
+                                <img src="images/team/6.jpg" class="img-circle" alt="">
+                            </div>
+                            <h3 class="team_name">Aditya Sharma</h3>
+                            <p class="team_designation">Core Member <br>17ucc007@lnmiit.ac.in</br></p>
+                            <p class="team_text">Coding - Data Science. </p>
+                            <p class="social-icons">
+                              <a href="https://github.com/IshitaParakh" target="_blank"><i class="ion-social-github"></i></a>
+                              <a href="https://www.linkedin.com/in/aditya-sharma-68422014b/" target="_blank"><i class="ion-social-linkedin"></i></a>
+
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--
+        ==================================================
+            Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s"   data-wow-duration="500ms">HOW TO JOIN? ?</h1>
+                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">We heartily welcome to our student branch and we wish to bring technologies for people by merging together as one. We would also love to address your queries and suggestion, click down the button to contact us.</p>
+                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+          <!--
+       ==================================================
+       Footer Section Start
+       ================================================== -->
+       <!--  <footer id="footer">
+          <div class="container">
+            <div class="col-md-8">
+              <p>Designed and Developed by <a href="http://facebook.com/AvengedEndie">Nitin Prakash</a></p>
+            </div>
+            <div class="col-md-4">
+              <ul class="social">
+                <li>
+                  <a href="https://www.facebook.com/IEEE.LNMIIT/" class="Facebook">
+                        <i class="ion-social-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/LNMIIT_Jaipur" class="Twitter">
+                        <i class="ion-social-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/company/ieee-sb-lnmiit/" class="Linkedin">
+                        <i class="ion-social-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/IEEE-LNMIIT-SB">
+                        <i class="ion-social-github"></i>
+                      </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>  --><!-- /#footer -->
+        <!-- <a id="navb" href="#top-bar"></a>
+        <style type="text/css">
+                html   {
+                          scroll-behavior: smooth;
+                       }
+                #navb {
+                          display: none;
+                          background-color: #333;
+                          width: 50px;
+                          height: 50px;
+                          text-align: center;
+                          border-radius: 4px;
+                          margin: 30px;
+                          position: fixed;
+                          bottom: 30px;
+                          right: 30px;
+                          transition: background-color .3s,opacity .5s, visibility .5s;
+                          z-index: 1000;
+                          opacity: 50;
+                          
+                        }
+                #navb:hover 
+                        {
+                          cursor: pointer;
+                          background-color: #696969;
+                        }
+                #navb:active 
+                        {
+                          background-color: #555;
+                        }
+                #navb::after 
+                        {
+                        content: "\f077";
+                        font-family: FontAwesome;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-size: 2em;
+                        line-height: 50px;
+                        color: #fff;
+                        }
+
+        </style>
+        <script>
+
+            jQuery(document).ready(function() {
+              
+              var btn = $('#navb');
+
+              $(window).scroll(function()
+               {
+                 if ($(window).scrollTop() > 300)
+                 {
+                  btn.fadeIn();
+                 } 
+                 else
+                 {
+                  btn.fadeOut();
+                 }
+              });
+
+              btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, '300');
+                return false;
+              });
+
+            });
+
+        </script> -->
+
+    </body>
+</html>
