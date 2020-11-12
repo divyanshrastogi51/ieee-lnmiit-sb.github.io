@@ -845,19 +845,23 @@ ul.social-icons li {
   color: #727272;
 }
 #team {
-  margin: 50px 0;
+  margin: 30px;
+  margin-top: 50px;
 }
 .team-member {
+  margin: 30px;
   margin-top: 30px;
 }
 .team-member:hover .team-img img {
   opacity: .8;
 }
-.team-member .team-img {
+.team-member .team-img img {
   position: relative;
+  width:220px;height:220px
 }
 .team-member .team-img .team-pic {
   width: 100%;
+  
 }
 .team-member .team_designation {
   font-size: 13px;
@@ -1122,3 +1126,5 @@ article {
   width: 20%;
   text-align: center
 }
+
+
